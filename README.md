@@ -1,3 +1,41 @@
+# 📦 Research Packs
+
+**Cross-platform desktop app for turning videos and online sources into structured, high-quality research packs — fast.**  
+Built with **Tauri + React + FastAPI**, designed for researchers, journalists, educators, and content creators.
+
+---
+
+## 🚀 Features
+
+- **Multi-source Input**: Add links manually or import via CSV (drag & drop supported)  
+- **Live Progress**: Real-time updates via Server-Sent Events  
+- **AI-Powered Processing**: Choose between **OpenAI**, **Hugging Face**, or **LM Studio** APIs  
+- **Structured Exports**: CSV/JSON with schema, source URLs, timestamps, and confidence scores  
+- **Run History**: Filterable logs with rerun support  
+- **Offline-First**: Local SQLite database with optional cloud sync  
+- **One-Click Build**: Tauri packaging for Windows (.msi/.exe), macOS (.dmg), and Linux (.deb/.rpm)  
+- **Customizable Thresholds**: Entity extraction confidence levels and translation settings  
+- **Privacy-Focused**: No telemetry unless you enable it  
+
+---
+
+## 📥 Installation
+
+### Prebuilt Binaries
+Check the [Releases](../../releases) page for the latest signed builds:
+- **Windows**: `.exe` installer or `.msi`
+- **macOS**: `.dmg` (notarized)
+- **Linux**: `.deb` / `.rpm`
+
+### Build from Source
+```bash
+git clone https://github.com/AaronCarter112/research-packs-tauri.git
+cd research-packs-tauri
+npm install
+npm run tauri build
+
+
+
 # Research Packs v0.8 (Final)
 Local-first desktop/web app that converts YouTube sources into clean research datasets.
 
