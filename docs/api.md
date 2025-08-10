@@ -1,0 +1,13 @@
+# API
+- GET /health
+- POST /config/llm { provider, openai_base?, openai_model? }
+- GET /llm/models
+- GET /llm/health
+- POST /projects { name, description?, translate, extractive, scheduled, export_folder? }
+- POST /sources { items: string[] }
+- GET /queue
+- POST /queue/start { limit?: number }  (async; progress via SSE /events)
+- GET /runs?status=&from=&to=
+- POST /runs/cancel
+- POST /runs/resume
+- POST /export { formats: ['csv','json','md'] }
